@@ -1,0 +1,94 @@
+html, body{
+    margin: 0;
+    padding:0;
+}
+/*Parallax Css Design*/
+.main 
+{
+    display: grid;
+    grid-auto-rows: 100vh 100vh 100vh 40vh;
+}
+.main #section1
+{
+    background-color:rgb(29, 28, 28);
+}
+.main #section2
+{
+    background-color: rgb(41, 44, 44);
+}
+.main #section3
+{
+    background-color:rgba(129, 127, 127, 0.5);
+}
+.main #section4
+{
+    background-color: #eee;
+}
+
+/*Sidebar Aniamtion*/
+.sidebar-main.hide,
+.sidebar-main.hide .icon-container{
+    margin-left: -300px
+}
+.sidebar-main.show,
+.sidebar-main.show .icon-container{
+    margin: 0;
+}
+
+.sidebar-main {
+    position:fixed;
+    background: rgb(58, 128, 0);
+    height: 100vh;
+    width:300px;
+    transition: margin 0.5s ease;
+
+    /*Layout Grid*/
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+/*Icon*/
+.sidebar-main .icon-container{
+    position:fixed;
+    left:300px;
+    height:60px;
+    width:75px;
+    background:rgb(58, 128, 0);
+    border-radius: 0 50% 50% 0;
+    cursor: pointer;
+    transition: margin 0.5s ease;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    /*Layout*/
+    display: grid;
+    place-items:center;
+}
+/*Menu*/
+.sidebar-main .menu-container{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width:100%;
+
+    /*Layout*/
+    /*grid-row: 3/4;*/
+    display: grid;
+    grid-auto-rows: 60px;
+}
+.sidebar-main .menu-container li{
+    /*Layout*/
+    color:white;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    place-items: center;
+}
+.sidebar-main .menu-container li:hover{
+    /*Design*/
+    background: white;
+    color:rgb(58, 128, 0);
+    cursor: pointer;
+}
