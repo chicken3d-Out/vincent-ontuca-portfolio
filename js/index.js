@@ -8,15 +8,15 @@ iconTrigger.addEventListener('click', () =>{
         arrow.classList.remove('vo-right')
         arrow.classList.add('vo-left')
         /*Sidebar */
-        sidebarMain.classList.add('show')
-        sidebarMain.classList.remove('hide')
+        sidebarMain.classList.add('hide')
+        sidebarMain.classList.remove('show')
     }
     else {
         /*Icon change*/
         arrow.classList.add('vo-right')
         arrow.classList.remove('vo-left')
         /*Sidebar */
-        sidebarMain.classList.remove('show')
-        sidebarMain.classList.add('hide')
+        sidebarMain.classList.remove('hide')
+        sidebarMain.classList.add('show')
     }
 })
