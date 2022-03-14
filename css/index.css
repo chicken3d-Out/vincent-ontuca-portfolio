@@ -7,20 +7,99 @@ html, body{
 {
     display: grid;
     grid-auto-rows: 100vh 100vh 100vh 40vh;
+    font-family: 'Roboto', sans-serif;
+    color:white;
 }
-.main #section1
+a {
+    color:white;
+}
+/*First Page*/
+.main .section1
 {
     background-color:rgb(29, 28, 28);
+    padding: 50px 120px 0 120px;
+
+    /*Layout*/
+    display: grid;
+    grid-template-rows: 200px 140px repeat(2,100px);
 }
-.main #section2
+.main .section1 .name{
+    font-size: 3.5rem;
+    font-weight: 500;
+
+    /*Layout*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main .section1 .name span {
+    color:rgb(58, 128, 0);
+    font-weight: 600;
+}
+
+/*Description Section*/
+.main .section1 .description {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    padding: 10px 40px;
+}
+.main .section1 .description b {
+    color: rgb(20, 115, 173);
+}
+.main .section1 .description span {
+    font-weight: 800;
+    color: rgb(168, 48, 48);
+}
+/*END OF Description*/
+/*Start of Tech Stack*/
+.main .section1 .techStack {
+    font-size: 1.5rem;
+}
+.main .section1 .techStack .title {
+    font-weight: 500;
+}
+.main .section1 .techStack .techIcons{
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 75px;
+    cursor: pointer;
+
+}
+/*END OF TechStack*/
+/*Start of Socials*/
+.main .section1 .socials {
+    font-size: 1.5rem;
+}
+.main .section1 .socials .title {
+    font-weight: 500;
+}
+.main .section1 .socials .social-icons{
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 75px;
+    cursor: pointer;
+}
+/*END OF SOCIALa*/
+
+
+/*END OF First Page*/
+
+
+.main .section2
 {
     background-color: rgb(41, 44, 44);
 }
-.main #section3
+.main .section3
 {
     background-color:rgba(129, 127, 127, 0.5);
 }
-.main #section4
+.main .section4
 {
     background-color: #eee;
 }
@@ -40,7 +119,7 @@ html, body{
     margin-left: -300px;
     
     position:fixed;
-    background: rgb(58, 128, 0);
+    background-color:rgb(12, 80, 123);
     height: 100vh;
     width:300px;
     transition: margin 0.5s ease;
