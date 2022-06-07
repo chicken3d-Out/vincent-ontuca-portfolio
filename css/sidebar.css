@@ -1,0 +1,421 @@
+/*Sidebar Aniamtion*/
+.sidebar-main.hide,
+.sidebar-main.hide .icon-container{
+    margin-left: -280px;
+}
+.sidebar-main.show,
+.sidebar-main.show .icon-container{
+    margin: 0px;
+}
+
+.sidebar-main {
+    /*Hide the side Nav*/
+    margin-left: -280px;
+    
+    position:fixed;
+    background-color:rgb(12, 80, 123);
+    height: 100vh;
+    width:280px;
+    transition: margin 0.5s ease;
+
+    /*Layout Grid*/
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+/*Icon*/
+.sidebar-main .icon-container{
+    /*Hide the Overlap Initials*/
+    margin-left: -280px;
+
+
+    position:fixed;
+    left:280px;
+    height:95px;
+    width:120px;
+    background:white;
+    border-radius: 0 50% 50% 0;
+    cursor: pointer;
+    transition: margin 0.5s ease;
+
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.8rem;
+    box-shadow: 0px 6px 1px gray;
+    /*Layout*/
+    display: grid;
+    place-items:center;
+}
+/*Menu*/
+.sidebar-main .menu-container{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width:100%;
+
+    /*Layout*/
+    /*grid-row: 3/4;*/
+    display: grid;
+    grid-auto-rows: 100px;
+}
+.sidebar-main #initials {
+    font-size: 3.7rem;
+    font-family: 'Russo One', sans-serif;
+}
+.sidebar-main .menu-container a li{
+    /*Layout*/
+    color:white;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    place-items: center;
+}
+.sidebar-main .menu-container a:hover{
+    /*Design*/
+    /* background: white; */
+    font-weight: 800;
+    cursor: pointer;
+    padding-left: 40px;
+    transition: padding 0.5s ease;
+}
+a {
+    text-decoration: none;
+}
+
+/* Desktop/Laptop */
+@media (max-width: 1200px) {
+    /*Sidebar Aniamtion*/
+    .sidebar-main.hide,
+    .sidebar-main.hide .icon-container{
+        margin-left: -250px;
+    }
+    .sidebar-main.show,
+    .sidebar-main.show .icon-container{
+        margin: 0px;
+    }
+
+    .sidebar-main {
+        /*Hide the side Nav*/
+        margin-left: -250px;
+        
+        position:fixed;
+        background-color:rgb(12, 80, 123);
+        height: 100vh;
+        width:250px;
+        transition: margin 0.5s ease;
+
+        /*Layout Grid*/
+        display: grid;
+        grid-template-rows: 60px 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    /*Icon*/
+    .sidebar-main .icon-container{
+        /*Hide the Overlap Initials*/
+        margin-left: -250px;
+
+
+        position:fixed;
+        left:250px;
+        height:90px;
+        width:110px;
+        background:white;
+        border-radius: 0 50% 50% 0;
+        cursor: pointer;
+        transition: margin 0.5s ease;
+
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2.8rem;
+        box-shadow: 0px 6px 1px gray;
+        /*Layout*/
+        display: grid;
+        place-items:center;
+    }
+    /*Menu*/
+    .sidebar-main .menu-container{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width:100%;
+
+        /*Layout*/
+        /*grid-row: 3/4;*/
+        display: grid;
+        grid-auto-rows: 70px;
+    }
+    .sidebar-main #initials {
+        font-size: 3rem;
+        font-family: 'Russo One', sans-serif;
+    }
+    .sidebar-main .menu-container a li{
+        /*Layout*/
+        color:white;
+        font-size: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: grid;
+        place-items: center;
+    }
+    .sidebar-main .menu-container a:hover{
+        /*Design*/
+        /* background: white; */
+        font-weight: 800;
+        cursor: pointer;
+        padding-left: 40px;
+        transition: padding 0.5s ease;
+    }
+}
+/* Tablet */
+@media (max-width: 992px) {
+    /*Sidebar Aniamtion*/
+    .sidebar-main.hide,
+    .sidebar-main.hide .icon-container{
+        margin-left: -230px;
+    }
+    .sidebar-main.show,
+    .sidebar-main.show .icon-container{
+        margin: 0px;
+    }
+
+    .sidebar-main {
+        /*Hide the side Nav*/
+        margin-left: -230px;
+        
+        position:fixed;
+        background-color:rgb(12, 80, 123);
+        height: 100vh;
+        width:230px;
+        transition: margin 0.5s ease;
+
+        /*Layout Grid*/
+        display: grid;
+        grid-template-rows: 60px 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    /*Icon*/
+    .sidebar-main .icon-container{
+        /*Hide the Overlap Initials*/
+        margin-left: -230px;
+
+
+        position:fixed;
+        left:230px;
+        height:80px;
+        width:90px;
+        background:white;
+        border-radius: 0 50% 50% 0;
+        cursor: pointer;
+        transition: margin 0.5s ease;
+
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2.8rem;
+        box-shadow: 0px 6px 1px gray;
+        /*Layout*/
+        display: grid;
+        place-items:center;
+    }
+    /*Menu*/
+    .sidebar-main .menu-container{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width:100%;
+
+        /*Layout*/
+        /*grid-row: 3/4;*/
+        display: grid;
+        grid-auto-rows: 70px;
+    }
+    .sidebar-main #initials {
+        font-size: 2.7rem;
+        font-family: 'Russo One', sans-serif;
+    }
+    .sidebar-main .menu-container a li{
+        /*Layout*/
+        color:white;
+        font-size: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: grid;
+        place-items: center;
+    }
+    .sidebar-main .menu-container a:hover{
+        /*Design*/
+        /* background: white; */
+        font-weight: 800;
+        cursor: pointer;
+        padding-left: 40px;
+        transition: padding 0.5s ease;
+    }
+}
+/* Tablet/Mobile Large */
+@media (max-width: 768px) {
+    /*Sidebar Aniamtion*/
+    .sidebar-main.hide,
+    .sidebar-main.hide .icon-container{
+        margin-left: -200px;
+    }
+    .sidebar-main.show,
+    .sidebar-main.show .icon-container{
+        margin: 0px;
+    }
+
+    .sidebar-main {
+        /*Hide the side Nav*/
+        margin-left: -200px;
+        
+        position:fixed;
+        background-color:rgb(12, 80, 123);
+        height: 100vh;
+        width:200px;
+        transition: margin 0.5s ease;
+
+        /*Layout Grid*/
+        display: grid;
+        grid-template-rows: 60px 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    /*Icon*/
+    .sidebar-main .icon-container{
+        /*Hide the Overlap Initials*/
+        margin-left: -200px;
+
+
+        position:fixed;
+        left:200px;
+        height:80px;
+        width:90px;
+        background:white;
+        border-radius: 0 50% 50% 0;
+        cursor: pointer;
+        transition: margin 0.5s ease;
+
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2.8rem;
+        box-shadow: 0px 6px 1px gray;
+        /*Layout*/
+        display: grid;
+        place-items:center;
+    }
+    /*Menu*/
+    .sidebar-main .menu-container{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width:100%;
+
+        /*Layout*/
+        /*grid-row: 3/4;*/
+        display: grid;
+        grid-auto-rows: 70px;
+    }
+    .sidebar-main #initials {
+        font-size: 2.7rem;
+        font-family: 'Russo One', sans-serif;
+    }
+    .sidebar-main .menu-container a li{
+        /*Layout*/
+        color:white;
+        font-size: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: grid;
+        place-items: center;
+    }
+    .sidebar-main .menu-container a:hover{
+        /*Design*/
+        /* background: white; */
+        font-weight: 800;
+        cursor: pointer;
+        padding-left: 40px;
+        transition: padding 0.5s ease;
+    }
+}
+/* Mobile */
+@media (max-width: 576px) {
+    /*Sidebar Aniamtion*/
+    .sidebar-main.hide,
+    .sidebar-main.hide .icon-container{
+        margin-left: -165px;
+    }
+    .sidebar-main.show,
+    .sidebar-main.show .icon-container{
+        margin: 0px;
+    }
+
+    .sidebar-main {
+        /*Hide the side Nav*/
+        margin-left: -165px;
+        
+        position:fixed;
+        background-color:rgb(12, 80, 123);
+        height: 100vh;
+        width:165px;
+        transition: margin 0.5s ease;
+
+        /*Layout Grid*/
+        display: grid;
+        grid-template-rows: 60px 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    /*Icon*/
+    .sidebar-main .icon-container{
+        /*Hide the Overlap Initials*/
+        margin-left: -165px;
+
+
+        position:fixed;
+        left:165px;
+        height:60px;
+        width:75px;
+        background:white;
+        border-radius: 0 50% 50% 0;
+        cursor: pointer;
+        transition: margin 0.5s ease;
+
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2.8rem;
+        box-shadow: 0px 6px 1px gray;
+        /*Layout*/
+        display: grid;
+        place-items:center;
+    }
+    /*Menu*/
+    .sidebar-main .menu-container{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width:100%;
+
+        /*Layout*/
+        /*grid-row: 3/4;*/
+        display: grid;
+        grid-auto-rows: 60px;
+    }
+    .sidebar-main #initials {
+        font-size: 2.3rem;
+        font-family: 'Russo One', sans-serif;
+    }
+    .sidebar-main .menu-container a li{
+        /*Layout*/
+        color:white;
+        font-size: 0.85rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: grid;
+        place-items: center;
+    }
+    .sidebar-main .menu-container a:hover{
+        /*Design*/
+        /* background: white; */
+        font-weight: 800;
+        cursor: pointer;
+        padding-left: 40px;
+        transition: padding 0.5s ease;
+    }
+}

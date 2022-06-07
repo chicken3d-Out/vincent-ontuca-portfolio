@@ -1,0 +1,215 @@
+/*First Page*/
+.main .section1
+{
+    color:white;
+    background-color:rgb(29, 28, 28);
+
+    /*Layout*/
+    display: grid;
+    /* grid-template-rows: repeat(3,1fr); */
+}
+.main .section1 .about-container {
+    margin: 100px 100px;
+
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    
+}
+.main .section1 .name{
+    padding: 1rem 0;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3.4rem;
+    font-weight: 500;
+
+    text-align: center;
+}
+.main .section1 .name span {
+    color:rgb(58, 128, 0);
+    /* font-weight: 600; */
+}
+
+/*Description Section*/
+.main .section1 .description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    
+
+    line-height: 2.5rem;
+
+    /* padding: 0px 40px; */
+}
+.main .section1 .description b {
+    color: rgb(20, 115, 173);
+}
+.main .section1 .description span {
+    font-weight: 800;
+    color: rgb(168, 48, 48);
+}
+
+/*Start of Socials*/
+.main .section1 .socials {
+    font-size: 1.5rem;
+}
+.main .section1 .socials .title {
+    font-weight: 500;
+}
+.main .section1 .socials .social-icons{
+    margin: 2rem 0;
+
+    font-size: 2.4rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.main .section1 .socials .social-icons div a:hover {
+    color: rgb(58, 128, 0);
+}
+/*END OF SOCIALS*/
+
+/*END OF First Page*/
+
+/* Desktop/Laptop */
+@media (max-width: 1200px) {
+    .main .section1 .about-container {
+        margin: 90px 90px;
+       
+    }
+    .main .section1 .name{
+        padding: 1.2rem 0;
+    
+        font-family: 'Press Start 2P', cursive;
+        font-size: 3rem;
+        font-weight: 500;
+    
+        text-align: center;
+    }
+    .main .section1 .description {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.3rem;
+        
+    
+        line-height: 2.1rem;
+    
+        /* padding: 0px 40px; */
+    }
+    .main .section1 .socials .social-icons{
+        margin: 2.2rem 0;
+    
+        font-size: 2rem;
+    
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+}
+/* Tablet */
+@media (max-width: 992px) {
+    .main .section1 .about-container {
+        margin: 80px 70px;
+        
+    }
+    .main .section1 .name{
+        padding: 1rem 0;
+    
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2.44rem;
+        font-weight: 500;
+    
+        text-align: center;
+    }
+    .main .section1 .description {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.25rem;
+        
+    
+        line-height: 2.1rem;
+    
+        /* padding: 0px 40px; */
+    }
+    .main .section1 .socials .social-icons{
+        margin: 2rem 0;
+    
+        font-size: 2.1rem;
+    
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+}
+/* Tablet/Mobile Large */
+@media (max-width: 768px) {
+    .main .section1 .about-container {
+        margin: 80px 35px;
+        
+    }
+    .main .section1 .name{
+        padding: 1.5rem 0;
+    
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2.1rem;
+        font-weight: 500;
+    
+        text-align: center;
+    }
+    .main .section1 .description {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        
+    
+        line-height: 2rem;
+    
+        /* padding: 0px 40px; */
+    }
+    .main .section1 .socials .social-icons{
+        margin: 2rem 0;
+    
+        font-size: 2.2rem;
+    
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+}
+/* Mobile */
+@media (max-width: 576px) {
+    .main .section1 .about-container {
+        margin: 50px 25px;
+        
+    }
+    .main .section1 .name{
+        margin-top: 1.35rem;
+        padding: unset;
+    
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1.85rem;
+        font-weight: 500;
+    
+        text-align: center;
+    }
+    .main .section1 .description {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.05rem;
+        
+    
+        line-height: 1.7rem;
+    
+        /* padding: 0px 40px; */
+    }
+    .main .section1 .socials .social-icons{
+        margin: 1.45rem 0;
+    
+        font-size: 1.8rem;
+    
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    
+}

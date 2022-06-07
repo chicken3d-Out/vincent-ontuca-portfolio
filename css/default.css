@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&family=Montserrat:wght@100;300;400&family=Press+Start+2P&family=Roboto:wght@500&family=Russo+One&display=swap');
+html, body{
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+/*Parallax Css Design*/
+
+.main 
+{
+    display: grid;
+    grid-auto-rows: 100vh 100vh 47vh;
+    
+}
+a {
+    text-decoration: none;
+   color: whitesmoke;
+}
