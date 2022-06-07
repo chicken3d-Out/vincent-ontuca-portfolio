@@ -2,7 +2,7 @@
 html, body{
     margin: 0;
     padding:0;
-    scroll-behavior: smooth;
+    
 }
 /*Parallax Css Design*/
 
@@ -10,7 +10,12 @@ html, body{
 {
     display: grid;
     grid-auto-rows: 100vh 100vh 47vh;
-    
+
+    scroll-snap-type:y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;

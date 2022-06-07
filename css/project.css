@@ -1,6 +1,8 @@
 /*PROJECT section*/
 .main .section2
 {
+    scroll-snap-align: start;
+
     /* background-color: rgb(41, 44, 44); */
     background-color:rgb(48, 47, 47);
     font-family: 'Montserrat', sans-serif;

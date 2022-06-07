@@ -1,6 +1,8 @@
 /*First Page*/
 .main .section1
 {
+    scroll-snap-align: start;
+
     color:white;
     background-color:rgb(29, 28, 28);
 

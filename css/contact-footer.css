@@ -1,5 +1,7 @@
 /*CONTACT section*/
 .main .section3 {
+    scroll-snap-align: center;
+    
     background-color: #eee;
     color: black;
 
