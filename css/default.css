@@ -21,3 +21,11 @@ a {
     text-decoration: none;
    color: whitesmoke;
 }
+@media (max-width: 576px){
+    .main {
+    
+    scroll-snap-type:none;
+    overflow-y:unset
+   
+    }
+}
