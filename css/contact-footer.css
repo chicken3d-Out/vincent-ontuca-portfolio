@@ -32,8 +32,12 @@
     display: flex;
     justify-content: center;
 }
+.main .section3 .contact-container .conContainer .container-name i {
+    display: flex;
+    justify-content: center;
+}
 .main .section3 .contact-container .conContainer .container-name .logo{
-align-items: center;
+/* align-items: center; */
 
     background-image: url('../img/Vo.ico');
     max-width:100px;
