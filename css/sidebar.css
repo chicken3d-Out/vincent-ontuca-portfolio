@@ -10,6 +10,7 @@
 
 .sidebar-main {
     /*Hide the side Nav*/
+    z-index: 100;
     margin-left: -280px;
     
     position:fixed;
@@ -114,6 +115,7 @@ a {
 
     /*Icon*/
     .sidebar-main .icon-container{
+        z-index: 100;
         /*Hide the Overlap Initials*/
         margin-left: -250px;
 
