@@ -17,10 +17,11 @@ html, body{
 
     scroll-behavior: smooth;
 }
-a {
+a, a:focus, a:active {
     text-decoration: none;
    color: whitesmoke;
    outline: none;
+   border:none;
 }
 @media (max-width: 576px){
     .main {
