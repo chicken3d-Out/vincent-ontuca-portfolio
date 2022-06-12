@@ -23,6 +23,10 @@ a, a:focus, a:active {
    outline: none;
    border:none;
 }
+a {
+    border:0 !important;
+    outline: 0 !important;
+}
 @media (max-width: 576px){
     .main {
     

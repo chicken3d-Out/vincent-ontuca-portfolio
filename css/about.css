@@ -65,6 +65,10 @@
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
+
+    outline:none;
+    border:none;
+    border:0;
 }
 .main .section1 .socials .social-icons div a:hover {
     color: rgb(58, 128, 0);
